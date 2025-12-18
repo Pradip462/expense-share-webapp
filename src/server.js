@@ -11,4 +11,9 @@ const startServer = async () => {
   });
 };
 
+app.get('/',(req,res) => {
+  console.log("ALL OK SERVER IS WORKING");
+  res.send("Hello I am Pradip");
+})
+
 startServer();
