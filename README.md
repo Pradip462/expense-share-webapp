@@ -51,9 +51,24 @@ Balances are always stored in **net form**, ensuring no duplicate or reverse ent
 
 ## 📂 API Documentation
 
+All APIs follow RESTful conventions and use JSON for request and response bodies.
+
+
 ### User APIs
 
 #### Create User
+**POST /users/create** : Creates a new user who can participate in groups and expenses.
+
+### Group APIs
+
+#### Create Group
+**POST /groups/create** : Creates a group with multiple users.
+Only group members are allowed to participate in expenses.
+
+### Expenses APIs
+
+
+### Balance APIs
 
 
 
