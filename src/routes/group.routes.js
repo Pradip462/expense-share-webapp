@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const groupController = require("../controllers/group.controller");
 
-router.get("/", (req, res) => {
-  res.send("Group routes working");
-});
+router.post("/create", groupController.createGroup);
 
 module.exports = router;
