@@ -67,8 +67,33 @@ Only group members are allowed to participate in expenses.
 
 ### Expenses APIs
 
+**POST /expenses/create** : Adds a shared expense to a group.
+
+##### Equal Split
+
+The total amount is divided equally among all group members.
+
+##### Exact Amount Split
+
+Each user owes a fixed, predefined amount.
+
+##### Percentage Split
+
+Each user owes a percentage of the total expense.
 
 ### Balance APIs
 
+#### Get Balances
+**GET /balances/objectID** : Returns balance summary for a user.
+*youOwe* → money the user needs to pay
+*theyOweYou* → money others need to pay the user
 
+#### Settle Dues
+**POST /balances/settle** : Settles or reduces outstanding balance between two users.
+
+## ✅ Conclusion
+
+This project implements a clean and scalable backend for an expense sharing application, covering all required functionalities such as group creation, shared expenses, balance tracking, and due settlement.
+
+The system supports multiple split types and ensures simplified balance management using net calculations, closely resembling real-world applications like Splitwise.
 
