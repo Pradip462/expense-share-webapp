@@ -39,5 +39,5 @@ exports.settleDue = async ({ from, to, amount }) => {
     throw new Error("Settlement details required");
   }
 
-  await exports.updateBalance(from, to, amount);
+  await exports.updateBalance(to, from, amount);
 };
